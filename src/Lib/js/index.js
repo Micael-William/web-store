@@ -1,27 +1,24 @@
-const btnAbrir = document.querySelector('.menu-mobile');
-const btnFechar = document.querySelector('.close');
+const produtos = document.querySelectorAll('.produtos');
 
-const container = document.querySelector('.abrir-menu');
-const containerFechar = document.querySelector('.fechar-menu');
-
-btnAbrir.addEventListener('click', () => {
-  container.classList.add('abrir');
-
-  if(container.classList.contains('fechar')) {
-   container.classList.remove('abrir');
-  }
+produtos.forEach((produto) => {
+  produto.addEventListener('click', () => {
+    const id = produto.getAttribute('data-id');
+    window.location.href = `detalhes?id=${id}`;
+  })
 })
 
-btnFechar.addEventListener('click', () => {
-  containerFechar.classList.add('fechar');
 
 
-  if(container.classList.contains('abrir')) {
-   containerFechar.classList.remove('fechar');
-   container.classList.remove('abrir');
-
-
-  }else{
-    console.log('não tem classe para fechar');
-  }
+$(document).ready(function(){
+  $.ajax({
+      url: '../Controllers/http/api.php',
+      type: 'GET',
+      datatype: 'json',
+      success:function(response){
+        console.log(response)
+      },
+      error:function(error){
+        console.log(error)
+      }
+  })
 })

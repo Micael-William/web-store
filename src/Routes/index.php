@@ -1,9 +1,11 @@
 <?php
 define('HOME', '/home');
 define('LOGIN', '/login');
-define('REGISTER', '/register');
+define('REGISTER', '/cadastro');
+define('CART', '/carrinho');
 define('LOGOUT', '/logout');
-define('PROFILE', '/profile');
-define('SETTINGS', '/settings');
+define('PROFILE', '/perfil');
+define('SETTINGS', '/configurações');
 define('SEARCH', '/search');
-define('POSTS', '/posts');
+define('DETAILS', '/detalhes');
+define('FOUND', '/notFound');
