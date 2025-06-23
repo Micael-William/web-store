@@ -53,7 +53,7 @@
 
 ### 🗄️ Banco de Dados
 - SQLite
-- MySQL (opcional)
+- MySQL
 
 ### 🎨 Front-End
 - HTML5, CSS3, JavaScript
