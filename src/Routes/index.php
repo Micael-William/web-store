@@ -9,3 +9,4 @@ define('SETTINGS', '/configurações');
 define('SEARCH', '/search');
 define('DETAILS', '/detalhes');
 define('FOUND', '/notFound');
+define('INDEX', '/');

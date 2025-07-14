@@ -1,6 +1,6 @@
 <?php
 namespace App\Controllers;
-use App\Controllers\InterfaceController;
+use App\Controllers\Roteamento;
 
 class PerfilController implements InterfaceController
 {

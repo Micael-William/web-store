@@ -198,7 +198,7 @@
             <button
                 class="absolute end-4 top-4 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75">
                 <span class="sr-only">Wishlist</span>
-                <svg
+                <svg onclick="favoritar(<?= $produto['id'] ?>)"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -219,9 +219,16 @@
             <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1"><?= $produto['nome'] ?></h3>
             <h2 class="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
             <p class="mt-1">$<?= $produto['preco']  . ',' . '00' ?></p>
-            <form class="mt-4 flex gap-4">
+            <form class="mt-4 flex gap-4 form" method="POST">
                 <button
-                    class="block w-full rounded-sm bg-gray-100 px-4 py-3 text-sm font-medium text-gray-900 transition hover:scale-105">
+                    onclick="adicionar(
+                    '<?= $produto['id']?>',
+                    '<?= $produto['nome'] ?>',
+                    '<?= $produto['preco'] ?>',
+                    '<?= $produto['imagem'] ?>'
+                    
+                    )"
+                    class="block w-full rounded-sm bg-green-200 px-4 py-3 text-sm font-medium text-gray-900 transition hover:scale-105">
                     Adicionar ao carrinho
                 </button>
             </form>

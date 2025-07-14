@@ -1,13 +1,19 @@
 <?php
+declare(strict_types=1);
+// evita erros de cabecalhos já enviados
+ob_start();
+
+session_start();
+use App\Routes\Route;
+
 require_once "../vendor/autoload.php";
 require_once "Routes/index.php";
-require_once "Routes/web.php";
-
 $path = $_SERVER['PATH_INFO'] ?? '/';
-session_start();
 
-// if (!array_key_exists('logado', $_SESSION) && $path === HOME) {
-//   header('Location:'. LOGIN);
-// }
+if($path == INDEX){
+    header("Location: " . LOGIN);
+}
 
-routes($path);
+Route::routes($path);
+Route::isLogado($path);
+

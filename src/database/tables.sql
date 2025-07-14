@@ -1,0 +1,25 @@
+CREATE TABLE IF NOT EXISTS tb_produto 
+(
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    user_id INTEGER NOT NULL,
+    nome VARCHAR(20) NOT NULL,
+    descricao VARCHAR(100) NOT NULL,
+    preco DECIMAL(10, 2) NOT NULL DEFAULT 0.00,
+    quantidade  INTEGER NOT NULL,
+    imagem VARCHAR(100) NOT NULL,
+    favorito TINYINT DEFAULT 0
+);
+
+CREATE TABLE IF NOT EXISTS tb_user 
+(
+    id INTEGER  PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(30) NOT NULL,
+    sobrenome VARCHAR(30) NOT NULL,
+    email VARCHAR(20) NOT NULL,
+    senha VARCHAR(12) NOT NULL,
+    data_nascimento VARCHAR(30) NULL,
+    telefone VARCHAR(20) NOT NULL,
+    endereco VARCHAR(100) NULL,
+    cep VARCHAR(30) NULL,
+    numero VARCHAR(30)  NULL
+);
