@@ -8,8 +8,8 @@
 </p>
 
 
-<img src="src/Lib/img/print-inicio.png" alt="Tela de Login" width="600"/>
-<img src="src/Lib/img/print-produtos.png" alt="Tela de Login" width="600"/>
+<img src="src/Lib/img/print-inicio.png" alt="Tela de Login" width="1200"/>
+<img src="src/Lib/img/print-produtos.png" alt="Tela de Login" width="1200"/>
 
 
 
