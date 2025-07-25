@@ -15,7 +15,7 @@
 
 ## 📄 Descrição
 
-> **WebShop** é uma plataforma de e-commerce desenvolvida com PHP e MySQL, ideal para pequenas e médias lojas online.  
+> **Webstore** é uma plataforma de e-commerce desenvolvida com PHP e MySQL, ideal para pequenas e médias lojas online.  
 > O sistema oferece funcionalidades completas como cadastro de produtos, gerenciamento de usuários, carrinho de compras, finalização de pedidos e um painel administrativo intuitivo.  
 >
 > Com uma interface responsiva construída com TailwindCSS e ícones do Bootstrap Icons, o projeto busca aliar desempenho, simplicidade e escalabilidade — sendo uma ótima base para estudos ou projetos reais na área de desenvolvimento web.
