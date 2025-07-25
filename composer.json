@@ -12,5 +12,7 @@
             "email": "mw931991@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "pagseguro/pagseguro-php-sdk": "^4.2"
+    }
 }

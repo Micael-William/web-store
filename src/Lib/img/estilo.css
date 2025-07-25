@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Poiret+One");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --fundo: #fff;
+  --cor_principal: rgba(0, 102, 242);
+  --mais_claro: #434768;
+  --mais_escuro: #121530;
+  --branco: #ffffff;
+  --cinza: #666666;
+  --preto: #000000;
+  --bg-cinza-claro: #f8f8f8;
+  --whats: #33a671;
+}
+
+.tarja_superior {
+  background-color: rgba(0, 102, 242);
+}
+
+.tarja_superior {
+  background-color: rgba(0, 102, 242);
+}
+
+.full_banner{
+  border:1px solid red;
+}
+
+
+
+@media (min-width: 768px) {
+  .navegacao .dropdown:hover > .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+    .navegacao {
+        height: 50px;
+    }
+    .navegacao .nav-link.dropdown-toggle {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  .navegacao .dropdown:hover > .nav-link.dropdown-toggle,
+  .navegacao .dropdown.show > .nav-link.dropdown-toggle {
+    background-color: #185fa5;
+    color: #fff;
+  }
+
+  .navegacao .dropdown {
+    height: 90px;
+  }
+  .navegacao .dropdown-menu {
+    width: 600px;        
+    min-width: unset !important;
+    max-width: 400px;     
+    white-space: normal;  
+  }
+  .navegacao .dropdown .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    min-width: 280px; 
+    padding: 10px 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    border: none;
+    border-radius: 4px;
+  }
+
+  .navegacao .dropdown-menu {
+    left: 0;
+    top: 90px;
+    right: auto;
+  }
+
+  .navegacao .dropdown-menu .dropdown-item {
+    padding: 8px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+  }
+
+  .navegacao .dropdown-menu .dropdown-item:hover {
+    color: #0d6efd;
+  }
+}

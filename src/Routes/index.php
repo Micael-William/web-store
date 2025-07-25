@@ -6,7 +6,9 @@ define('CART', '/carrinho');
 define('LOGOUT', '/logout');
 define('PROFILE', '/perfil');
 define('SETTINGS', '/configurações');
+define('CHECKOUT', '/checkout');
 define('SEARCH', '/search');
 define('DETAILS', '/detalhes');
 define('FOUND', '/notFound');
 define('INDEX', '/');
+

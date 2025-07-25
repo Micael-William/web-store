@@ -35,7 +35,7 @@ function adicionar(id, nome, preco, imagem){
   })
 }
 
-function favoritar(id){
+function favoritar(id, indice){
   $(document).ready(function(){
     $.ajax({
         url: '../Services/ajax.php',
@@ -43,10 +43,12 @@ function favoritar(id){
         datatype: 'json',
         data: {
           id: id,
+          indice: indice,
           action: 'favoritar'
         },
         success:function(response){
           console.log(response)
+          // window.location.href ='/home';
         },
         error:function(error){
           console.log(error)
@@ -55,7 +57,7 @@ function favoritar(id){
   })
 }
 
-function desfavoritar(id){
+function desfavoritar(id, indice){
   $(document).ready(function(){
     $.ajax({
         url: '../Services/ajax.php',
@@ -63,10 +65,12 @@ function desfavoritar(id){
         datatype: 'json',
         data: {
           id: id,
+          indice: indice,
           action: 'desfavoritar'
         },
         success:function(response){
           console.log(response)
+          // window.location.href ='/home';
         },
         error:function(error){
           console.log(error)

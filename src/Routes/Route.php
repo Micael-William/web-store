@@ -6,6 +6,7 @@ use App\Controllers\HomeController;
 use App\Controllers\LoginController;
 use App\Controllers\CadastroController;
 use App\Controllers\CarrinhoController;
+use App\Controllers\CheckoutController;
 use App\Controllers\LogoutController;
 use App\Controllers\NotFoundController;
 use App\Controllers\OfertaController;
@@ -43,8 +44,8 @@ class Route
             case '/perfil':
                 PerfilController::view();
                 break;
-            case '/ofertas':
-                OfertaController::view();
+            case '/checkout':
+                CheckoutController::view();
                 break;
             default:
                 NotFoundController::view();
@@ -72,6 +73,11 @@ class Route
                 }
             break;
             case SETTINGS:
+                if(!array_key_exists('logado', $_SESSION)){
+                    header('Location:' . LOGIN);
+                }
+            break;
+            case CHECKOUT:
                 if(!array_key_exists('logado', $_SESSION)){
                     header('Location:' . LOGIN);
                 }

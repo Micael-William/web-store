@@ -227,7 +227,7 @@
 
                             <div class="flex justify-end">
                                 <a
-                                    href="#"
+                                    href="<?= CHECKOUT ?>"
                                     class="block rounded-sm bg-gray-700 px-5 py-3 text-sm text-gray-100 transition hover:bg-gray-600">
                                     Checkout
                                 </a>

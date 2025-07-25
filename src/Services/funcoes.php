@@ -3,6 +3,7 @@ require_once "../../vendor/autoload.php";
 
 use App\Models\Produto;
 use App\Models\Usuario;
+use App\Services\Favoritar;
 use App\Services\FavoritarProduto;
 
 function adicionar($action, $id, $nome, $preco, $imagem){
@@ -27,32 +28,47 @@ function adicionar($action, $id, $nome, $preco, $imagem){
         ]);
     }
 }
-
-function favoritar($action, $id,){
-    if($action === 'favoritar'){
-        $user_id = $_SESSION['logado']['id'];
-        $produto = new FavoritarProduto();
-        $produto->favoritar($id, $user_id);
+ 
+ 
+function favoritar($action, $id, $index) {
+    
+    if ($action === 'favoritar') {
 
         if(!isset($_SESSION['favoritos'])){
             $_SESSION['favoritos'] = [];
         }
 
         if(!isset($_SESSION['favoritos'][$id])){
-            $_SESSION['favoritos'][$id] = 'favoritado';
+            $_SESSION['favoritos'][$id] = [
+                'id' => $id
+            ];
         }
 
-        var_dump($_SESSION['favoritos']);
 
-        return json_encode([
-            'favoritos' => count($_SESSION['favoritos'])
-        ]);
+        if (isset($_SESSION['favoritos'])) {
+            foreach ($_SESSION['favoritos'] as $fav) {
+              $favoritosIds[] = (int) $fav['id'];
+              $favoritos= new Favoritar();
+              $favoritos->setFavoritos($favoritosIds);
+            }
+        }
+
+
+        var_dump($_SESSION['favoritos']);
     }
 }
 
-function desfavoritar($action, $id){
+
+function desfavoritar($action, $id, $index){
     if($action === 'desfavoritar'){
-        $userId = isset($_SESSION['logado']['id']) ? $_SESSION['logado']['id'] : 0;
-        
+
+        if($id){
+            if(isset($_SESSION['favoritos'])){
+                unset( $_SESSION['favoritos'][$index]);
+                array_values($_SESSION['favoritos']);
+                var_dump($_SESSION['favoritos']);
+                // return json_encode($_SESSION['favoritos']);
+            }
+        }
     }
 }

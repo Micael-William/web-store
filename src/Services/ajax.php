@@ -9,13 +9,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nome = $_POST['nome'] ?? '';
     $preco = $_POST['preco'] ?? '';
     $imagem = $_POST['imagem'] ?? '';
-
-    adicionar($action, $id, $nome, $preco, $imagem);
-    desfavoritar($action, $id);
 }
-$action = $_GET['action'] ?? '';
 
-$id = $_GET['id'] ?? '';
 
-favoritar($action, $id);
 
+
+if($_SERVER['REQUEST_METHOD'] === 'GET'){
+    
+    $id = $_GET['id'] ?? '';
+    $index = $_GET['indice'] ?? '';
+    $action = $_GET['action'] ?? '';
+
+    favoritar($action, $id, $index);
+    desfavoritar($action, $id, $index); 
+}
+
+// if($_SERVER['REQUEST_METHOD'] === 'GET'){
+    
+//     $id = $_GET['id'] ?? '';
+//     $index = $_GET['indice'] ?? '';
+//     $action = $_GET['action'] ?? '';
+//     desfavoritar($action, $id, $index); 
+// }

@@ -1,31 +1,21 @@
-<h1>🛍️ WebStore - Plataforma de E-commerce PHP</h1>
-
+<h1>E-commerce - Webshop</h1>
 <p align="left">
-  <a href="#"><img src="https://img.shields.io/badge/feito%20com-PHP%208-blue?style=flat-square&logo=php"></a>
-  <a href="#"><img src="https://img.shields.io/badge/banco%20de%20dados-SQLite-lightgrey?style=flat-square&logo=sqlite"></a>
-  <a href="#"><img src="https://img.shields.io/badge/front--end-HTML%2FCSS%2FJS-orange?style=flat-square&logo=javascript"></a>
-  <a href="#"><img src="https://img.shields.io/badge/estilo-TailwindCSS%20%2B%20Bootstrap%20Icons-0ea5e9?style=flat-square&logo=tailwind-css"></a>
+  <a href="#"><img src="https://img.shields.io/badge/PHP%208-blue?style=flat-square&logo=php"></a>
+  <a href="#"><img src="https://img.shields.io/badge/MySQL-lightgrey?style=flat-square&logo=sqlite"></a>
+  <a href="#"><img src="https://img.shields.io/badge/HTML%2FCSS%2FJS-orange?style=flat-square&logo=javascript"></a>
+  <a href="#"><img src="https://img.shields.io/badge/GIT-blue?style=flat-square&logo=GIT"></a>
   <a href="#"><img src="https://img.shields.io/badge/license-MIT-green?style=flat-square"></a>
 </p>
 
-<br>
 
-## 🖼️ Layout do Projeto
+<img src="src/Lib/img/print-inicio.png" alt="Tela de Login" width="600"/>
+<img src="src/Lib/img/print-produtos.png" alt="Tela de Login" width="600"/>
 
-### 🔐 Tela de Login
-<img src="src/Lib/img/print-login.png" alt="Tela de Login" width="600"/>
 
-### 📝 Tela de Cadastro
-<img src="src/Lib/img/print-cadastro.png" alt="Tela de Cadastro" width="600"/>
-
-### 🏠 Página Inicial (Produtos)
-<img src="src/Lib/img/print-produtos.png" alt="Página de Produtos" width="600"/>
-
----
 
 ## 📄 Descrição
 
-> **WebStore** é uma plataforma de e-commerce desenvolvida com PHP e SQLite, ideal para pequenas e médias lojas online.  
+> **WebShop** é uma plataforma de e-commerce desenvolvida com PHP e MySQL, ideal para pequenas e médias lojas online.  
 > O sistema oferece funcionalidades completas como cadastro de produtos, gerenciamento de usuários, carrinho de compras, finalização de pedidos e um painel administrativo intuitivo.  
 >
 > Com uma interface responsiva construída com TailwindCSS e ícones do Bootstrap Icons, o projeto busca aliar desempenho, simplicidade e escalabilidade — sendo uma ótima base para estudos ou projetos reais na área de desenvolvimento web.
