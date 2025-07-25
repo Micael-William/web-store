@@ -1,4 +1,4 @@
-<h1>E-commerce - Webshop</h1>
+<h1>E-commerce - Webstore</h1>
 <p align="left">
   <a href="#"><img src="https://img.shields.io/badge/PHP%208-blue?style=flat-square&logo=php"></a>
   <a href="#"><img src="https://img.shields.io/badge/MySQL-lightgrey?style=flat-square&logo=sqlite"></a>
