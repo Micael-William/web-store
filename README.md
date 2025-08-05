@@ -34,6 +34,10 @@
 - **Painel de pedidos** — Visualização e gerenciamento dos pedidos realizados.
 
 
+  ## Integração com API de pagamentos
+  - Abacate Pay
+
+
 <br>
 
 ## 🛠️ Tecnologias Utilizadas
